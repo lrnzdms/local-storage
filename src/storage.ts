@@ -1,4 +1,4 @@
-import { getDb } from "./getDb";
+import { getDb } from "./db";
 
 export interface IPayload { id: string, data: any, date: number }
 
