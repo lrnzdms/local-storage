@@ -1,12 +1,12 @@
 {
-  "name": "@lrnzdms/storage",
+  "name": "@lrnzdms/local-storage",
   "version": "0.0.1",
   "author": "lrnzdms",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
+  "repository": "git://github.com/lrnzdms/local-storage.git",
   "main": "build/index.js",
+  "files": [
+    "build/"
+  ],
   "scripts": {
     "prebuild": "rm -rf ./dist",
     "build": "tsc"
