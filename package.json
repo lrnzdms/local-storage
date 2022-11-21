@@ -1,6 +1,6 @@
 {
   "name": "@lrnzdms/local-storage",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "lrnzdms",
   "repository": "git://github.com/lrnzdms/local-storage.git",
   "main": "build/index.js",
