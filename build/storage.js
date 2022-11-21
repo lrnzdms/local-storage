@@ -27,7 +27,7 @@ class LocalStorage {
                 await this.del(id);
                 return;
             }
-            return payload.data;
+            return payload;
         };
         this.del = async (id) => {
             const store = await this._getStore("readwrite");

@@ -10,9 +10,9 @@ export interface ILocalStorageOptions {
 export class LocalStorage {
   private _storeId: string = "files";
   private _db: Promise<IDBDatabase>;
-  private _deprecation:number = 8.64e+7; // Defaults to one day!
+  private _deprecation: number = 8.64e+7; // Defaults to one day!
 
-  constructor(options: ILocalStorageOptions) {    
+  constructor(options: ILocalStorageOptions) {
     this._db = getDb(options.identifier);
     if (options.deprecationTime) {
       this._deprecation = options.deprecationTime
@@ -28,9 +28,9 @@ export class LocalStorage {
     store.add(payload);
   }
 
-  get = async (id: string, remoteDate?:number): Promise<IPayload|undefined> => {
+  get = async (id: string, remoteDate?: number): Promise<IPayload | undefined> => {
 
-    const payload:IPayload = await this._getData(id);
+    const payload: IPayload = await this._getData(id);
 
     if (!payload) return;
 
@@ -48,7 +48,7 @@ export class LocalStorage {
       return;
     }
 
-    return payload.data;
+    return payload;
   }
 
   del = async (id: string) => {
